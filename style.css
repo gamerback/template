@@ -230,7 +230,7 @@ body {
 .topnav {
   overflow: hidden;
   background-color: black;
-  position: relative;
+  position: fixed;
 }
 
 .topnav #myLinks {
