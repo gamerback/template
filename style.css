@@ -221,3 +221,9 @@ body {
       font-size: 10px;
   
   }
+@media screen (max-width: 1024px) {
+    .formm {
+    width: 100%;
+    font-size: 10px;        
+    }
+}
