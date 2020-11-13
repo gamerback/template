@@ -10,11 +10,16 @@
    <body>
      
       <main>
-<div id="navbar">
-  <a class="active" href="#1">Home</a>
-  <a href="#2">Download</a>
+<div class="topnav">
+  <a href="#1" class="active">Home</a>
+  <div id="myLinks">
     <a href="#2">About</a>
-  <a href="#3">Contact</a>
+    <a href="#2">Downloads</a>
+    <a href="#3">Form</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
    
          <div id="1" class="box">
@@ -153,16 +158,12 @@
     
       </footer>
 <script>
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
   } else {
-    navbar.classList.remove("sticky");
+    x.style.display = "block";
   }
 }
 </script>
