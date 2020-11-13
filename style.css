@@ -132,9 +132,7 @@ body {
   transition: 0.3s;
 }
 
-.top:hover {
-  box-shadow: 0 8px 12px 0 transparent;
-}
+
 
 .top .t {
   background-color: #111;
@@ -256,9 +254,14 @@ body {
   top: 0;
 }
 
+.topnav:active {
 
+}
 
 .active {
   background-color: black;
   color: white;
+}
+a:link {
+  text-decoration: none;
 }
