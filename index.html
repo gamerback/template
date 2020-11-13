@@ -10,8 +10,11 @@
    <body>
      
       <main>
-        <div class="header" id="myHeader">
-  <h2>Lorem Ispum</h2>
+<div id="navbar">
+  <a class="active" href="#1">Home</a>
+  <a href="#2">Download</a>
+    <a href="#2">About</a>
+  <a href="#3">Contact</a>
 </div>
    
          <div id="1" class="box">
@@ -149,32 +152,18 @@
          
     
       </footer>
-     <script>
+<script>
 window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
 
 function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
   } else {
-    header.classList.remove("sticky");
+    navbar.classList.remove("sticky");
   }
-}
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
 }
 </script>
    </body>
