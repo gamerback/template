@@ -227,41 +227,38 @@ body {
     font-size: 10px;        
     }
 }
-#navbar {
+.topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: grey;
+  position: relative;
 }
 
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  display: block;
 }
 
-#navbar a:hover {
-  background-color: #ddd;
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: white;
   color: black;
 }
 
-#navbar a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.content {
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
+.active {
+  background-color: white;
+  color: black;
 }
