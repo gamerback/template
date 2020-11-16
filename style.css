@@ -16,6 +16,7 @@ main {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-radius: 30px;
+    text-decoration: none;
     
 }
 .s2 {
@@ -33,6 +34,7 @@ main {
     font-size: 30px;
     margin: 10px;
     border-radius: 30px;
+    text-decoration: none;
 }
 
 .d {
@@ -62,11 +64,11 @@ a:visited {
 }
 
 a:hover {
-    border-bottom: 1px dotted white;
+    text-decoration: none;
 }
 
 a:active {
-    border-bottom: 1px dotted white;
+    text-decoration: none;
 }
 input[type="text"] {
     padding: 10px;
@@ -262,19 +264,3 @@ body {
   background-color: black;
   color: white;
 }
-a:link {
-  text-decoration: none;
-}
-
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
- text-decoration: none;
-}
-
-a:active {
-  text-decoration: none;
-} 
